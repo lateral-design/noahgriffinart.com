@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+
+	<title>Noah Griffin</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+	<link rel="stylesheet" href="assets/style.css">
+
+</head>
+<body>
+
+	<main>
+		<img src="assets/landing.png" class="slide start"></img>
+	</main>
+
+	<div class="forward"> </div>
+	<div class="back"></div>
+
+	<footer>
+		<p>CONTACT: <a href="mailto:noahjlgriffin@gmail.com">NOAHJLGRIFFIN@GMAIL.COM</a></p>
+	</footer>
+
+	<script>
+	let images = [
+		{% for entry in page.images %}"assets/slides/{{entry}}",
+		{% endfor %}, ""
+	];
+
+	images = images.slice(0, images.length - 2);
+
+	const $slide = document.querySelector('.slide');
+
+	let i = 0;
+
+	document.querySelector('.forward').addEventListener('click', () => {
+		$slide.setAttribute('src', images[Math.abs(++i % images.length)]);
+
+		$slide.addEventListener('load', () => {
+				$slide.classList.remove('start');
+		});
+	});
+
+	document.querySelector('.back').addEventListener('click', () => {
+		$slide.setAttribute('src', images[Math.abs(--i % images.length)]);
+		
+		$slide.addEventListener('load', () => {
+				$slide.classList.remove('start');
+		});
+	});
+	</script>
+
+</body>

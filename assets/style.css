@@ -15,22 +15,25 @@ html { font-family: 'Inter', sans-serif; }
 }
 
 main {
-	margin-top: 10vh;
+	margin-top: 15vh;
 
-	width: 800px;
-	max-width: 90%;
+	width: 50vw;
+	height: 50vh;
 
 	margin-left: auto;
 	margin-right: auto;
 }
 
 img {
-	width: 100%;
+	max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    display: block;
 }
 
 p {
 	font-weight: 500;
-	font-size: 20px;
+	font-size: 1rem;
 	text-align: center;
 }
 
@@ -45,4 +48,28 @@ footer {
 	left: 0;
 	right: 0;
 	width: 100%;
+
+	color: #333;
+}
+
+.forward {
+	width: 50%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+}
+
+.back {
+	width: 50%;
+	position: fixed;
+	top: 0;
+	left: 50%;
+	height: 100%;
+
+	z-index: 1000;
+}
+
+.start {
+	width: 400px;
 }
