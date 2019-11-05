@@ -5,15 +5,15 @@
 layout: home
 
 images:
-  - 000062410011.jpg
-  - EP FINAL.jpg
-  - IMG_0688.JPG
-  - IMG_0698.JPG
-  - PAGES 3.jpg
-  - TREASON.jpg
-  - 000062410023.jpg
-  - FO-LI logo.jpg
-  - IMG_0697.JPG
-  - PAGES 1.jpg
-  - PAGES 4 2.jpg
+- 000062410011 copy.jpg
+- FO-LI logo.jpg		
+- PAGES 4 2.jpg
+- 000062410023 copy.jpg
+- GLUEM poster 3.jpg
+- TOYZ POSTER 2 V8.jpg
+- 230 site comp.jpeg
+- PAGES 1.jpg		
+- TREASON site v.jpeg
+- EP FINAL copy.jpg
+- PAGES 3.jpg
 ---
