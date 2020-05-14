@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Noah Griffin</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Oswald">
+  <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Inter">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+  <div class = "name">
+  <p id="title"><a href="index.html">NOAH GRIFFIN</a></p>
+  </div>
+
+  <div class = "details">
+    <p id="desc"></p>
+  </div>
+
+
+
+
+<div class = "piece">
+<image id="currentImage"></image>
+</div>
+
+
+
+
+  <div class = "projects">
+    <p>Projects</p>
+    <button id="project" onClick="projectSelect(0)">Mice</button><br>
+    <button id="project" onClick="projectSelect(1)">Duals</button><br>
+    <button id="project" onClick="projectSelect(2)">Treason</button><br>
+    <button id="project" onClick="projectSelect(3)">Feet</button><br>
+    <button id="project" onClick="projectSelect(4)">Distortions</button><br>
+    <button id="project" onClick="projectSelect(5)">Portraits</button><br>
+    <button id="project" onClick="projectSelect(6)">Poster Design</button><br>
+    <button id="project" onClick="projectSelect(7)">Web Design</button><br>
+  </div>
+
+
+  <div class = "contact">
+
+  <a href="mailto:noahgriffinart@gmail.com">contact: noahgriffinart@gmail.com</a>
+  </div>
+
+<div class = "left">
+
+</div>
+
+<div class = "right">
+
+</div>
+
+
+<script>
+var imageDir = "assets/";
+var images = [
+  ['mice 1.png', 'mice 2.jpg', 'mice 3.jpg'],
+  ['duals 1.jpg', 'UNTITLED.jpg'],
+  ['treason 1.jpg', 'treason 2.jpg', 'treason 3.jpg', 'treason 4.jpg', 'treason 5.jpg'],
+  ['feet 1.jpg', 'feet 2.jpg', 'feet 3.jpg', 'feet 4.jpg'],
+  ['distortions 1.jpg', 'distortions 2.jpg', 'distortions 3.jpg'],
+  ['portrait 1.jpg', 'portrait 2.jpg', 'portrait 3.jpg'],
+  ['poster 1.jpg', 'poster 2.jpg', 'poster 3.png'],
+  ['web 1.jpg', 'noki.png']
+]
+
+var descriptions = [
+  ['Litter<br>- GAN generated images<br>- 64 x 64px<br>- 2019',
+  'Untitled<br>- Oil and Gloss on Canvas<br>- 70 x 90cm<br>- 2019',
+  'Untitled- Oil on paper<br>- 46 x 46cm<br>- 2019'],
+
+  ['To Obtain<br>- Oil on Paper<br>- 70 x 50cm<br>- 2020',
+  'Release<br>- Oil on Canvas<br>- 30 x 40cm<br>- 2019'],
+
+  ['Treason 1<br>- Digital Image<br>- A4 Document<br>- 2019',
+  'Treason 2<br>- Digital Image<br>- A4 Document<br>- 2019',
+  'Treason 3<br>- Digital Image<br>- A4 Document<br>- 2019',
+  'Treason 4<br>- Digital Image<br>- A4 Document<br>- 2019',
+  'Treason 5<br>- Digital Image<br>- A4 Document<br>- 2019'],
+
+  ['Feet 1<br>- Film Photograph<br>- 2019',
+  'Feet 2<br>- Film Photograph<br>- 2019',
+  'Feet 3<br>- Film Photograph<br>- 2019',
+  'Feet 4<br>- Film Photograph<br>- 2019'],
+
+  ['Distortion 1<br>- Digital Image<br>- 2018',
+  'Distortion 2<br>- Digital Image<br>- 2018',
+  'Distortion 3<br>- Digital Image<br>- 2019'],
+
+  ['Kamran<br>- Oil on Canvas<br>-40 x 70cm<br>- 2019',
+  'Anxious Self Portrait<br>- Oil and Graphite on paper<br>- 20 x 25cm<br>-2019',
+  'Billy<br>- Oil and Graphite on Mountboard<br>- 20 x 16cm<br>- 2018'],
+
+  ['Gluem at The Brunswick Poster<br>- Digital Image<br>- A3\- 2018',
+  'Nest Disjointed Exhibition by Kamran Amin<br>- Digital Image<br>- A3<br> -2020',
+  'Toys at The Hope and Ruin<br>- Digital Image<br>- A3<br>- 2019'],
+
+  ['<a href="https://www.lateral.design" target="_blank">Lateral</a><br>- Web Design Company<br>- 2019 - Present',
+  'Noki<br>- Coming Soon']
+]
+
+var project;
+var slide;
+
+function projectSelect(x) {
+  slide = 0;
+  project = x;
+  document.getElementById("currentImage").src = (imageDir.concat(images[project][slide]));
+  document.getElementById("desc").innerHTML = (descriptions[project][slide]);
+
+}
+
+
+document.querySelector('.right').addEventListener('click', () => {
+  if (slide+1 < images[project].length){
+    slide++;
+  }
+
+  else if ((slide +1>= images[project].length) && (images[project].length > 1)){
+    slide = 0;
+  }
+
+  document.getElementById("currentImage").src = (imageDir.concat(images[project][slide]));
+  document.getElementById("desc").innerHTML = (descriptions[project][slide]);
+});
+
+document.querySelector('.left').addEventListener('click', () => {
+
+  if (slide <= 0){
+    slide = (images[project].length - 1);
+  }
+
+  else if ((slide  >= 1)){
+    slide--;
+  }
+
+  document.getElementById("currentImage").src = (imageDir.concat(images[project][slide]));
+  document.getElementById("desc").innerHTML = (descriptions[project][slide]);
+
+});
+
+
+</script>
+
+
+</body>
+</html>
