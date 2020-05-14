@@ -1,0 +1,153 @@
+.crosshair {cursor: crosshair;}
+
+body{
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 18px;
+  color: #ffc9b3;
+  cursor: crosshair;
+}
+
+a{
+
+  text-decoration: none;
+  color: #ffc9b3;
+
+  /* mouse over link */
+a:hover {
+  color: #ff6969;
+}
+
+  /* selected link */
+a:active {
+  color: #ff6969;
+}
+
+
+}
+button {
+  color: #ffc9b3;
+  background-color: inherit;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  text-align: right;
+  float: right;
+  cursor: pointer;
+  width: fit-content;
+  display: block;
+  cursor: crosshair;
+}
+
+button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+button:hover {
+
+  color: white;
+  background-color: #ffc9b3;
+}
+
+button:focus {
+  color: white;
+  background-color: #ffc9b3;
+}
+
+.name{
+  position: absolute;
+  left: 6vw;
+  top: 3vh;
+
+  font-family: Oswald;
+  font-weight: 600;
+  font-size: 24px;
+
+}
+
+
+.details{
+  position: absolute;
+  height: 100%;
+  left: 6vw;
+  bottom: 5vh;
+  width: 20vw;
+
+  font-family: Inter;
+  font-size: 14px;
+  display: flex;
+  align-items: flex-end;
+
+}
+
+
+.piece{
+  position: absolute;
+  text-align: center;
+  display: block;
+  left: 50%;
+  margin-left: -25vw;
+  //margin-right: auto;
+  top: 50%;
+  margin-top: -40vh;
+  width: 50vw;
+  height: 80vh;
+  z-index: -4;
+}
+
+.piece img{
+  text-align: center;
+
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+.projects{
+  position: absolute;
+  height: 100%;
+  right: 6vw;
+  top: 5vh;
+  text-align: right;
+
+}
+
+
+.contact{
+  position: absolute;
+  height: fit-content;
+  right: 6vw;
+  bottom: 6vh;
+  width: fit-content;
+  text-align: right;
+
+
+  font-weight: bold;
+  font-size: 12px;
+  display: flex;
+  align-items: flex-end;
+}
+
+
+.left{
+	width: 50%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+
+  z-index: -1;
+
+}
+
+.right {
+	width: 50%;
+	position: fixed;
+	top: 0;
+	left: 50%;
+	height: 100%;
+
+	z-index: -1;
+}
+}
