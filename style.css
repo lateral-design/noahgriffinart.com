@@ -127,6 +127,9 @@ button:focus {
     font-size: 12px
   }
 
+  .contact{
+    top: 12vh;
+  }
   .piece {
     width: 90vw;
     margin-left: -45vw;
@@ -148,7 +151,9 @@ button:focus {
   body{
     font-size: 15px
   }
-
+  .contact{
+    top: 12vh;
+  }
   .piece {
     width: 90vw;
     margin-left: -45vw;
