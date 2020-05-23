@@ -75,8 +75,6 @@ button:focus {
   display: block;
   left: 50%;
   margin-left: -25vw;
-  top: 50%;
-  margin-top: -44vh;
   z-index: -4;
 }
 
@@ -99,7 +97,7 @@ button:focus {
   text-align: right;
   font-weight: bold;
   left: 6vw;
-  top: 12vh;
+  top: 10vh;
 }
 
 .left{
@@ -130,11 +128,12 @@ button:focus {
   }
 
   .piece {
-    width: 60vw;
-    margin-left: -30vw;
+    width: 90vw;
+    margin-left: -45vw;
     text-align: center;
-    top: 20vh;
-    height: 40vh;
+    top: 50%;
+    margin-top: -30vh;
+    height: 50vh;
   }
 
   .projects{
@@ -151,11 +150,12 @@ button:focus {
   }
 
   .piece {
-    width: 60vw;
-    margin-left: -30vw;
+    width: 90vw;
+    margin-left: -45vw;
     text-align: center;
-    top: 20vh;
-    height: 40vh;
+    height: 50vh;
+    top: 50%;
+    margin-top: -30vh;
   }
 
   .projects{
@@ -175,6 +175,8 @@ button:focus {
     width: 60vw;
     margin-left: -30vw;
     height: 66vh;
+    top: 50%;
+    margin-top: -35vh;
   }
   .projects{
     top: 6vh;
@@ -193,6 +195,8 @@ button:focus {
     width: 60vw;
     margin-left: -30vw;
     height: 70vh;
+    top: 50%;
+    margin-top: -35vh;
   }
 
   .projects{
