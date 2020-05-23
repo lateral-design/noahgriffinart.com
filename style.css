@@ -99,7 +99,7 @@ button:focus {
   text-align: right;
   font-weight: bold;
   left: 6vw;
-  top: 10vh;
+  top: 12vh;
 }
 
 .left{
@@ -131,7 +131,7 @@ button:focus {
 
   .piece {
     width: 60vw;
-    margin-left: -45vw;
+    margin-left: -30vw;
     text-align: center;
     margin-top: -30vh;
     height: 40vh;
@@ -152,7 +152,7 @@ button:focus {
 
   .piece {
     width: 60vw;
-    margin-left: -45vw;
+    margin-left: -30vw;
     text-align: center;
     margin-top: -30vh;
     height: 40vh;
