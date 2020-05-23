@@ -130,11 +130,11 @@ button:focus {
   }
 
   .piece {
-    width: 90vw;
+    width: 60vw;
     margin-left: -45vw;
     text-align: center;
     margin-top: -35vh;
-    height: 50vh;
+    height: 40vh;
   }
 
   .projects{
@@ -151,11 +151,11 @@ button:focus {
   }
 
   .piece {
-    width: 90vw;
+    width: 60vw;
     margin-left: -45vw;
     text-align: center;
     margin-top: -35vh;
-    height: 50vh;
+    height: 40vh;
   }
 
   .projects{
