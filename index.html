@@ -117,8 +117,8 @@ function projectSelect(x) {
   slide = 0;
   project = x;
 
-  document.getElementById("currentImage").src = (imageDir.concat(images[project][slide]));
-  document.getElementById("desc").innerHTML = (descriptions[project][slide]);
+  document.getElementById("currentImage").src = (imageDir.concat(images[project][0]));
+  document.getElementById("desc").innerHTML = (descriptions[project][0]);
 
   document.querySelector('.right').addEventListener('click', () => {
     if (slide+1 < images[project].length){
