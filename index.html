@@ -122,7 +122,7 @@ function projectSelect(x) {
 
   document.querySelector('.right').addEventListener('click', () => {
     if (slide+1 < images[project].length){
-      slide++;
+      slide = slide + 1;
     }
 
     else if ((slide +1>= images[project].length) && (images[project].length > 1)){
@@ -140,7 +140,7 @@ function projectSelect(x) {
     }
 
     else if ((slide  >= 1)){
-      slide--;
+      slide = slide - 1;
     }
 
     document.getElementById("currentImage").src = (imageDir.concat(images[project][slide]));
