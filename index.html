@@ -121,8 +121,9 @@ function projectSelect(x) {
   document.getElementById("desc").innerHTML = (descriptions[project][0]);
 
   document.querySelector('.right').addEventListener('click', () => {
-    if (slide+1 < images[project].length){
-      slide = slide + 1;
+    document.querySelector('.right').addEventListener('click', () => {
+    if (slide+1 < (images[project]).length){
+      slide++;
     }
 
     else if ((slide +1>= images[project].length) && (images[project].length > 1)){
