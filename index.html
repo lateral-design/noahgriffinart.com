@@ -120,18 +120,17 @@ function projectSelect(x) {
   document.getElementById("currentImage").src = (imageDir.concat(images[project][0]));
   document.getElementById("desc").innerHTML = (descriptions[project][0]);
 
-  document.querySelector('.right').addEventListener('click', () => {
-    document.querySelector('.right').addEventListener('click', () => {
-    if (slide+1 < (images[project]).length){
-      slide++;
-    }
+   document.querySelector('.right').addEventListener('click', () => {
+   if (slide+1 < (images[project]).length){
+     slide++;
+   }
 
-    else if ((slide +1>= images[project].length) && (images[project].length > 1)){
-      slide = 0;
-    }
+   else if ((slide +1>= images[project].length) && (images[project].length > 1)){
+     slide = 0;
+   }
 
-    document.getElementById("currentImage").src = (imageDir.concat(images[project][slide]));
-    document.getElementById("desc").innerHTML = (descriptions[project][slide]);
+   document.getElementById("currentImage").src = (imageDir.concat(images[project][slide]));
+   document.getElementById("desc").innerHTML = (descriptions[project][slide]);
   });
 
   document.querySelector('.left').addEventListener('click', () => {
