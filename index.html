@@ -77,10 +77,10 @@ var images = [
 
 var descriptions = [
   ['Litter<br>- GAN generated images<br>- 64 x 64px<br>- 2019',
-  'Untitled<br>- Oil and Gloss on Canvas<br>- 60 x 80 x 3.5cm<br>- 2019',
+  'Untitled<br>- Oil and Gloss on Canvas<br>- 70 x 90cm<br>- 2019',
   'Untitled- Oil on paper<br>- 46 x 46cm<br>- 2019'],
 
-  ['Duals<br>- Oil on Paper<br>- 65 x 50cm<br>- 2020',
+  ['To Obtain<br>- Oil on Paper<br>- 70 x 50cm<br>- 2020',
   'Release<br>- Oil on Canvas<br>- 30 x 40cm<br>- 2019'],
 
   ['Treason 1<br>- Digital Image<br>- A4 Document<br>- 2019',
@@ -98,13 +98,13 @@ var descriptions = [
   'Distortion 2<br>- Digital Image<br>- 2018',
   'Distortion 3<br>- Digital Image<br>- 2019'],
 
-  ['Kamran<br>- Oil on Canvas<br>-50 x 70cm<br>- 2019',
+  ['Kamran<br>- Oil on Canvas<br>-40 x 70cm<br>- 2019',
   'Anxious Self Portrait<br>- Oil and Graphite on paper<br>- 20 x 25cm<br>-2019',
   'Billy<br>- Oil and Graphite on Mountboard<br>- 20 x 16cm<br>- 2018'],
 
   ['Gluem at The Brunswick Poster<br>- Digital Image<br>- A3\- 2018',
   'Nest Disjointed Exhibition by Kamran Amin<br>- Digital Image<br>- A3<br> -2020',
-  'Toyz at The Hope and Ruin<br>- Digital Image<br>- A3<br>- 2019'],
+  'Toys at The Hope and Ruin<br>- Digital Image<br>- A3<br>- 2019'],
 
   ['<a href="https://www.lateral.design" target="_blank">Lateral</a><br>- Web Design Company<br>- 2019 - Present',
   'Noki<br>- Coming Soon']
@@ -117,20 +117,20 @@ function projectSelect(x) {
   slide = 0;
   project = x;
 
-  document.getElementById("currentImage").src = (imageDir.concat(images[project][0]));
-  document.getElementById("desc").innerHTML = (descriptions[project][0]);
+  document.getElementById("currentImage").src = (imageDir.concat(images[project][slide]));
+  document.getElementById("desc").innerHTML = (descriptions[project][slide]);
 
-   document.querySelector('.right').addEventListener('click', () => {
-   if (slide+1 < (images[project]).length){
-     slide++;
-   }
+  document.querySelector('.right').addEventListener('click', () => {
+    if (slide+1 < (images[project]).length){
+      slide++;
+    }
 
-   else if ((slide +1>= images[project].length) && (images[project].length > 1)){
-     slide = 0;
-   }
+    else if ((slide +1>= images[project].length) && (images[project].length > 1)){
+      slide = 0;
+    }
 
-   document.getElementById("currentImage").src = (imageDir.concat(images[project][slide]));
-   document.getElementById("desc").innerHTML = (descriptions[project][slide]);
+    document.getElementById("currentImage").src = (imageDir.concat(images[project][slide]));
+    document.getElementById("desc").innerHTML = (descriptions[project][slide]);
   });
 
   document.querySelector('.left').addEventListener('click', () => {
@@ -140,7 +140,7 @@ function projectSelect(x) {
     }
 
     else if ((slide  >= 1)){
-      slide = slide - 1;
+      slide--;
     }
 
     document.getElementById("currentImage").src = (imageDir.concat(images[project][slide]));
@@ -154,3 +154,4 @@ function projectSelect(x) {
 
 </body>
 </html>
+
