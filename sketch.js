@@ -1,6 +1,6 @@
 var imageDir = "assets/";
 var images = [
-  ['interface 1.jpg', 'interface 2.jpg', 'interface 3.jpg'],
+  ['interface 1 site.jpg', 'interface 2 site.jpg', 'interface 3 site.jpg'],
   ['mice 1.png', 'mice 2.jpg', 'mice 3.jpg', 'wall mounted radiator 1.jpg'],
   ['de facto space cover.jpg', 'de facto space text.jpg', 'long straight.jpg'],
   ['treason 1.jpg', 'treason 2.jpg', 'treason 3.jpg', 'treason 4.jpg', 'treason 5.jpg'],
