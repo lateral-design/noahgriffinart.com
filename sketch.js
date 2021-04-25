@@ -8,7 +8,7 @@ var images = [
   ['de facto space cover.jpg', 'de facto space text.jpg', 'long straight.jpg'],
   ['mice 1.png', 'mice 2.jpg', 'mice 3.jpg', 'wall mounted radiator 1.jpg'],
   ['interface 1 site.jpg', 'interface 2 site.jpg', 'interface 3 site.jpg'],
-  ['postcat 1.jpg', 'postcat 2.jpg', 'postcat 3.jpg', 'postcat 4.jpg']
+  ['postcat 1.jpg', 'postcat 2.jpg', 'postcat 3.jpg', 'postcat 4.jpg', 'What am i doing.png', 'Endon - party.png', 'Endon - career.png', 'Endon - electric cats.png', 'Endon - invisible.png', 'Endon - stunner.png', 'Endon - painting.png', 'already quite a crowd-01.png', 'Platform 1.jpg']
 ]
 
 var descriptions = [
@@ -50,10 +50,20 @@ var descriptions = [
   'When is the next train to London Bridge?<br>- Digital Image<br>- 2021',
   'What\'s the temperature like outside?<br>- Digital Image<br>- 2021'],
 
-  ['Cat 1<br>- Found Digital Image (edited)<br>- 2021',
-  'Cat 2<br>- Found Digital Image (edited)<br>- 2021',
-  'Cat 3<br>- Found Digital Image (edited)<br>- 2021',
-  'Cat 4<br>- Found Digital Image (edited)<br>- 2021']
+  ['Cat 1<br>-Found Digital Image (edited)<br>-2021',
+  'Cat 2<br>-Found Digital Image (edited)<br>-2021',
+  'Cat 3<br>-Found Digital Image (edited)<br>-2021',
+  'Cat 4<br>-Found Digital Image (edited)<br>-2021',
+  'What am I doing?<br>-Proposal<br>-2021',
+  'Party<br>-2021',
+  'Career path<br>-2021',
+  'Purr<br>-2021',
+  'Waking up on a good day<br>-2021',
+  'Stunner<br>-2021',
+  'Painting<br>-2021',
+  'Deleuze & Guattari<br>-A Thousand Plateaus',
+  'Platform<br>-2021'
+  ]
 ]
 
 var project;
