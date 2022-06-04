@@ -50,7 +50,7 @@ var descriptions = [
   ['Reform Club installation 1<br>Collaboration with Evie Savini<br>- PVC pipe, mesh screen, audio reactive projection<br>- 2022',
   'Reform Club installation 1 detail<br>Collaboration with Evie Savini<br>- PVC pipe, mesh screen, audio reactive projection<br>- 2022'],
 
-  ['Reform Club 2 installation shot<br>Audio reactive suspended projection platform<br>Maypole<br>Remix Flyers<br>Sign for a party<br>Sound loop<br>- 2022',
+  ['Reform Club 2 installation shot<br>Audio reactive suspended<br>projection platform<br>Maypole<br>Remix Flyers<br>Sign for a party<br>Sound loop<br>- 2022',
   'Reform Club 2 installation shot<br>Sign for a party, Remix Flyers<br>- Arcylic, aluminium, vinyl, graphite on tracing paper<br>- 2022',
   'Reform Club 2 installation shot<br>Remix Flyers<br>- Graphite on tracing paper<br>- 2022',
   'Reform Club 2 installation shot<br>Suspension platform<br>- Arcylic, fabric, hanging wire, beer crate<br>- 2022',
@@ -76,7 +76,7 @@ function projectSelect(x) {
       slide++;
     }
 
-    else if ((slide + 1 >= images[project].length) && (images[project].length > 1)){
+    else if ((slide >= images[project].length) && (images[project].length > 1)){
       slide = 0;
     }
 
