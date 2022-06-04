@@ -14,9 +14,9 @@ var images = [
 
   ['reform club 1/reform club v1 1.jpg', 'reform club 1/reform club v1 2.jpg'],
 
-  ['reform club 2/reform club 2 1.jpg', 'reform club 2/reform club 2 2.jpg', 'reform club 2/reform club 2 3.jpg',
-  'reform club 2/reform club 2 4.jpg', 'reform club 2/reform club 2 5.jpg', 'reform club 2/reform club 2 6.jpg',
-  'reform club 2/reform club 2 7.jpg', 'reform club 2/reform club 2 8.jpg', 'reform club 2/reform club 2 9.jpg']
+  ['reform Club 2/reform club 2 1.jpg', 'reform Club 2/reform club 2 2.jpg', 'reform Club 2/reform club 2 3.jpg',
+  'reform Club 2/reform club 2 4.jpg', 'reform Club 2/reform club 2 5.jpg', 'reform Club 2/reform club 2 6.jpg',
+  'reform Club 2/reform club 2 7.jpg', 'reform Club 2/reform club 2 8.jpg', 'reform Club 2/reform club 2 9.jpg']
 ]
 
 var descriptions = [
